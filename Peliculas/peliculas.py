@@ -42,7 +42,7 @@ class Comentarios():
     def getComentario(self): 
         print("\nComentario:", self.comentario)
 
-class Pelicula(InformacionPelicula, InformacionVideo, Comentarios): 
+class Pelicula(InformacionPelicula, InformacionVideo, Comentarios):	#hereda de InformacionPelicula, InformacionVideo y Comentarios
     #Constructor 
     def __init__(self, nombre, director, year, genero, pais, duracion, audio, subtitulos, size, comentario):
         InformacionPelicula.__init__(self, nombre, director, year, genero, pais)

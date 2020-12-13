@@ -41,7 +41,7 @@ public:
 };
  
 
-class Pelicula: public InformacionPelicula, public InformacionVideo, public Comentarios
+class Pelicula: public InformacionPelicula, public InformacionVideo, public Comentarios	//hereda de InformacionPelicula, InformacionVideo y Comentarios
 {
 public:
     Pelicula(string nombre, string director, string genero, int year, string pais, int duracion, string audio, string subtitulos, float size, string comentario)

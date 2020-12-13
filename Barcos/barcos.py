@@ -9,7 +9,7 @@ class Nacion():
     def getNacion(self):
         print("País:", self.pais)
       
-class Tipo(Nacion): 
+class Tipo(Nacion):  #hereda de Nacion
     #Constructor 
     def __init__(self, pais, tipo):
         Nacion.__init__(self, pais)
@@ -18,7 +18,7 @@ class Tipo(Nacion):
     def getTipo(self): 
         print("Tipo:", self.tipo)
 
-class Clase(Tipo): 
+class Clase(Tipo):	#hereda de Tipo
     #Constructor 
     def __init__(self, pais, tipo, clase):
         Tipo.__init__(self, pais, tipo)
@@ -27,7 +27,7 @@ class Clase(Tipo):
     def getClase(self): 
         print("Clase:", self.clase)
 
-class Barco(Clase): 
+class Barco(Clase):	#hereda de Clase 
     #Constructor 
     def __init__(self, pais, tipo, clase, barco, year, destino):
         Clase.__init__(self, pais, tipo, clase)

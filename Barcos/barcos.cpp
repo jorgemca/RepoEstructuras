@@ -13,7 +13,7 @@ public:
     }
 };
  
-class Tipo: public Nacion
+class Tipo: public Nacion //hereda de Nacion
 {
 public:
     Tipo(string pais, string tipo)
@@ -23,7 +23,7 @@ public:
     }
 };
  
-class Clase: public Tipo
+class Clase: public Tipo	//hereda de Tipo
 {
 public:
     Clase(string pais, string tipo, string clase)
@@ -33,7 +33,7 @@ public:
     }
 };
 
-class Barco: public Clase
+class Barco: public Clase	//hereda de Clase
 {
 public:
     Barco(string pais, string tipo, string clase, string barco, int year, string destino)

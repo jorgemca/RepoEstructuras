@@ -11,7 +11,7 @@ class Persona():
         print("Nombre:", self.nombre)
         print("Identificacion:", self.identificacion)
       
-class Accidente(Persona): 
+class Accidente(Persona): #hereda de Persona
     #Constructor 
     def __init__(self, nombre, identificacion, monto, frecuencia):
         Persona.__init__(self, nombre, identificacion)
@@ -22,7 +22,7 @@ class Accidente(Persona):
         print("Persona tiene una póliza de accidentes. Monto ", self.frecuencia,": ₡", self.monto)
 
 
-class Vehiculo(Persona): 
+class Vehiculo(Persona): #hereda de Persona
     #Constructor 
     def __init__(self, nombre, identificacion, placa):
         Persona.__init__(self, nombre, identificacion)
@@ -31,7 +31,7 @@ class Vehiculo(Persona):
     def getPlaca(self): 
         print("Placa: ", self.placa)
 
-class Carro(Vehiculo): 
+class Carro(Vehiculo):	#hereda de Vehiculo
     #Constructor 
     def __init__(self, nombre, identificacion, placa, monto, frecuencia):
         Vehiculo.__init__(self, nombre, identificacion, placa)
@@ -41,7 +41,7 @@ class Carro(Vehiculo):
     def getPoliza(self): 
         print("Persona tiene una póliza de automovil. Monto ", self.frecuencia,": ₡", self.monto)
 
-class Moto(Vehiculo): 
+class Moto(Vehiculo):	#hereda de Vehiculo
     #Constructor 
     def __init__(self, nombre, identificacion, placa, monto, frecuencia):
         Vehiculo.__init__(self, nombre, identificacion, placa)

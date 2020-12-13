@@ -15,7 +15,7 @@ public:
     }
 };
  
-class Accidente: public Persona
+class Accidente: public Persona	//hereda de Persona
 {
 public:
     Accidente(string nombre, int identificacion, int monto, string frecuencia)
@@ -25,7 +25,7 @@ public:
     }
 };
  
-class Vehiculo: public Persona
+class Vehiculo: public Persona	//hereda de Persona
 {
 public:
     Vehiculo(string nombre, int identificacion, int placa)
@@ -36,7 +36,7 @@ public:
 };
 
 
-class Carro: public Vehiculo
+class Carro: public Vehiculo	//hereda de Vehiculo
 {
 public:
     Carro(string nombre, int identificacion, int placa, int monto, string frecuencia)
@@ -46,7 +46,7 @@ public:
     }
 };
 
-class Moto: public Vehiculo
+class Moto: public Vehiculo	//hereda de Vehiculo
 {
 public:
     Moto(string nombre, int identificacion, int placa, int monto, string frecuencia)
