@@ -13,4 +13,4 @@ Es una herencia multinivel, es decir una clase hereda de otra que hereda de otra
 
 **3. Explique por qué se puede aplicar herencia en este caso.**
 
-La mayor parte de los barcos de la segunda guerra mundial cumplen con este esquema que va de mayor a menor, en el que la herencia puede ayudar a reducir la cantidad de código y tiempo, si por ejemplo quiero agregar otro argumento en la clase "Barco" estoy cambiando una línea en lugar de cientas.
+La mayor parte de los barcos de la segunda guerra mundial cumplen con este esquema que va de mayor a menor, en el que la herencia puede ayudar a reducir la cantidad de código y tiempo, si por ejemplo quiero agregar otro argumento en la clase "Barco" puedo hacerlo agregando un par de lineas.
